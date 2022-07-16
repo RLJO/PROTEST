@@ -1,0 +1,4 @@
+[submodule "kypnetgt/kiranhotel"]
+	path = kypnetgt/kiranhotel
+	url = git@github.com:kypnetgt/kiranhotel.git
+	branch = main
