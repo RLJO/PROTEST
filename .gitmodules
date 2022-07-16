@@ -2,3 +2,8 @@
 	path = RLJO/cl-canal2
 	url = git@github.com:RLJO/cl-canal2.git
 	branch = 15.0
+
+[submodule "RLJO/meli_oerp"]
+	path = RLJO/meli_oerp
+	url = git@github.com:RLJO/meli_oerp.git
+	branch = 15.0
