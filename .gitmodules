@@ -1,0 +1,4 @@
+[submodule "RLJO/cl-canal2"]
+	path = RLJO/cl-canal2
+	url = git@github.com:RLJO/cl-canal2.git
+	branch = 15.0
