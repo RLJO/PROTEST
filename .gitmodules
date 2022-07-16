@@ -2,3 +2,8 @@
 	path = kypnetgt/kiranhotel
 	url = git@github.com:kypnetgt/kiranhotel.git
 	branch = main
+
+[submodule "centionedevs/nasra"]
+	path = centionedevs/nasra
+	url = git@github.com:centionedevs/nasra.git
+	branch = main
