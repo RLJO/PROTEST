@@ -12,3 +12,8 @@
 	path = RLJO/fishingModule
 	url = git@github.com:RLJO/fishingModule.git
 	branch = main
+
+[submodule "RLJO/acsoluions"]
+	path = RLJO/acsoluions
+	url = git@github.com:RLJO/acsoluions.git
+	branch = staging
