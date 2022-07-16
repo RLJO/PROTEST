@@ -12,3 +12,8 @@
 	path = DiamondOdoo15/Diamond15
 	url = git@github.com:DiamondOdoo15/Diamond15.git
 	branch = ver_final
+
+[submodule "RLJO/Transport-Module-Odoo"]
+	path = RLJO/Transport-Module-Odoo
+	url = git@github.com:RLJO/Transport-Module-Odoo.git
+	branch = main
