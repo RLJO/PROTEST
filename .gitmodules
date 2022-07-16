@@ -17,3 +17,8 @@
 	path = RLJO/Transport-Module-Odoo
 	url = git@github.com:RLJO/Transport-Module-Odoo.git
 	branch = main
+
+[submodule "kypnetgt/ISP"]
+	path = kypnetgt/ISP
+	url = git@github.com:kypnetgt/ISP.git
+	branch = ISP
