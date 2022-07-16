@@ -7,3 +7,8 @@
 	path = RLJO/meli_oerp
 	url = git@github.com:RLJO/meli_oerp.git
 	branch = 15.0
+
+[submodule "RLJO/fishingModule"]
+	path = RLJO/fishingModule
+	url = git@github.com:RLJO/fishingModule.git
+	branch = main
