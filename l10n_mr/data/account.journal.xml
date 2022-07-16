@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="account_journal_inv" model="account.journal">
+            <field name="name">Customer Invoices</field>
+            <field name="type">sale</field>
+            <field name="code">INV</field>
+            <field name="color">11</field>
+        </record>
+        <record id="account_journal_bill" model="account.journal">
+            <field name="name">Vendor Bills</field>
+            <field name="type">purchase</field>
+            <field name="code">BILL</field>
+            <field name="color">11</field>
+        </record>
+        <record id="account_journal_misc" model="account.journal">
+            <field name="name">Miscellaneous Operations</field>
+            <field name="type">general</field>
+            <field name="code">MISC</field>
+        </record>
+        <record id="account_journal_bank" model="account.journal">
+            <field name="name">Bank</field>
+            <field name="type">bank</field>
+            <field name="code">BNK</field>
+            <field name="default_account_id" ref="l10n_mr.pcg_550000"/>
+            <field name="suspense_account_id" ref="l10n_mr.pcg_514102"/>
+        </record>
+        <record id="account_journal_cash" model="account.journal">
+            <field name="name">Cash</field>
+            <field name="type">cash</field>
+            <field name="code">CSH</field>
+            <field name="default_account_id" ref="l10n_mr.pcg_560000"/>
+            <field name="suspense_account_id" ref="l10n_mr.pcg_514102"/>
+        </record>
+    </data>
+</odoo>

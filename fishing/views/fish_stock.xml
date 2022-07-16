@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="fishing_service_stock_form" model="ir.ui.view">
+            <field name="name">fish.service.stock.form</field>
+            <field name="model">fish.service.stock</field>
+            <field name="arch" type="xml">
+                <form string="Stock entry">
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="ref" placeholder="Reference"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <field name="customer_id"/>
+                        </group>
+
+                        <group>
+                            <group>
+                                <field name="stock_id"/>
+                                <field name="location_id"/>
+                            </group>
+                            <group>
+                                <field name="receive_date"/>
+                                <field name="expected_exit_date"/>
+                            </group>
+                        </group>
+                        <group>
+                            <group>
+                                <field name="category_id"/>
+                            </group>
+                            <group>
+                                <field name="qte"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="fishing_service_stock_tree" model="ir.ui.view">
+            <field name="name">fish.service.stock.tree</field>
+            <field name="model">fish.service.stock</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="ref"/>
+                    <field name="customer_id"/>
+                    <field name="category_id"/>
+                    <field name="product_id"/>
+                    <field name="qte"/>
+                    <field name="stock_id"/>
+                    <field name="location_id"/>
+                    <field name="receive_date"/>
+                    <field name="exit_date"/>
+                    <field name="is_ready_out" invisible="1"/>
+                    <field name="is_out" invisible="1"/>
+                    <button name="exit_stock"
+                            string="Exit"
+                            type="object"
+                            class="oe_highlight"
+                            attrs="{'invisible': [('is_ready_out', '=', False)]}"
+                    />
+                    <button name="exit_stock_ready"
+                            string="Prepare Exit"
+                            type="object"
+                            class="oe_highlight"
+                            attrs="{'invisible': ['|', ('is_out', '=', True), ('is_ready_out', '=', True)]}"
+                            groups="fishing.fishing_admin"
+                    />
+                </tree>
+            </field>
+        </record>
+
+        <record id="fishing_service_stock_window" model="ir.actions.act_window">
+            <field name="name">Service stocks</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">fish.service.stock</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('is_out', '=', False)]</field>
+        </record>
+
+
+        <menuitem name="Stock"
+                  id="fishing_stock_root_menu"
+                  parent="base.menu_sc_root"
+                  sequence="4"
+        />
+
+        <menuitem name="Production"
+                  id="fishing_production_stock"
+                  parent="fishing_stock_root_menu"
+                  sequence="1"
+        />
+        <menuitem name="Products"
+                  id="fishing_production_stock_products"
+                  parent="fishing_production_stock"
+                  sequence="1"
+                  action="stock.product_template_action_product"
+        />
+        <menuitem name="Packages"
+                  id="fishing_production_stock_packages"
+                  parent="fishing_production_stock"
+                  sequence="2"
+                  action="stock.action_package_view"
+        />
+        <menuitem name="Pallets"
+                  id="fishing_production_stock_pallets"
+                  parent="fishing_production_stock"
+                  sequence="2"
+                  action="action_pallets_view"
+        />
+        <menuitem name="Service"
+                  id="fishing_service_stock"
+                  parent="fishing_stock_root_menu"
+                  sequence="2"
+        />
+        <menuitem name="Service stocks"
+                  id="fishing_service_stocks"
+                  parent="fishing_service_stock"
+                  sequence="1"
+                  action="fishing_service_stock_window"
+
+        />
+    </data>
+</odoo>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem name="Service overview"
+                  id="menu_service_overview"
+                  parent="menu_dashboard"
+                  sequence="2"
+                  action="fishing_service_stock_window"
+                  groups="fishing.fishing_admin"
+        />
+    </data>
+</odoo>

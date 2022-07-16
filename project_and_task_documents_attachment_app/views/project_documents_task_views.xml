@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+
+		<record id="project_documents_attachments" model="ir.ui.view">
+			<field name="name">Documents Attachments</field>
+			<field name="model">ir.attachment</field>
+			<field name="inherit_id" ref="base.view_attachment_tree"/>
+			<field name="arch" type="xml">
+				<tree>
+				</tree>
+			</field>
+		</record>
+
+		<record id="project_documents_menu_action" model="ir.actions.act_window">
+			<field name="name">Project Documents</field>
+			<field name="res_model">ir.attachment</field>
+			<field name="view_mode">form</field>
+			<field name="domain">[('res_model','=','project.project')]</field>
+			<field name="view_mode">tree,form,kanban</field>
+		</record>
+
+		<record id="project_task_attachments" model="ir.ui.view">
+			<field name="name">Task Attachments</field>
+			<field name="model">ir.attachment</field>
+			<field name="inherit_id" ref="base.view_attachment_tree"/>
+			<field name="arch" type="xml">
+				<tree>
+				</tree>
+			</field>
+		</record>
+
+		<record id="project_task_menu_action" model="ir.actions.act_window">
+			<field name="name">Task Documents</field>
+			<field name="res_model">ir.attachment</field>
+			<field name="view_mode">form</field>
+			<field name="domain">[('res_model','=','project.task')]</field>
+			<field name="view_mode">tree,form,kanban</field>
+		</record>
+
+
+		<menuitem name="Documents" id="project_documents_main_menu" parent="project.menu_main_pm" groups="project.group_project_manager"/>
+
+		<menuitem name="Project Documents" id="project_documents_sub_menu" parent="project_documents_main_menu"
+		action="project_documents_menu_action"/>
+
+		<menuitem name="Task Documents" id="task_documents_sub_menu" parent="project_documents_main_menu"
+		action="project_task_menu_action"/>
+
+
+		<!-- Project Project View -->
+
+		<record model="ir.ui.view" id="view_edit_project_extended_001">
+			<field name="name">project.project.form.extended.001</field>
+			<field name="model">project.project</field>
+			<field name="inherit_id" ref="project.edit_project" />
+			<field name="arch" type="xml">
+				<div name="button_box" position="inside">
+					<button class="oe_stat_button" type="object" name="action_get_attachment_view" icon="fa-paperclip">
+						<div class="o_form_field o_stat_info">
+							<span class="o_stat_value">
+								<field name="attachment_number"/>
+							</span>
+							<span class="o_stat_text">Attachments</span>
+						</div>
+					</button>
+				</div>
+			</field>
+		</record>
+
+		<!-- Project Task View -->
+
+		<record model="ir.ui.view" id="view_task_form2_extended_001">
+			<field name="name">project.task.form.extended.001</field>
+			<field name="model">project.task</field>
+			<field name="inherit_id" ref="project.view_task_form2" />
+			<field name="arch" type="xml">
+				<div name="button_box" position="inside">
+					<button class="oe_stat_button" type="object" name="action_get_attachment_view" icon="fa-paperclip">
+						<div class="o_form_field o_stat_info">
+							<span class="o_stat_value">
+								<field name="attachment_number"/>
+							</span>
+							<span class="o_stat_text">Attachments</span>
+						</div>
+					</button>
+				</div>
+			</field>
+		</record>
+
+
+
+	</data>
+</odoo>

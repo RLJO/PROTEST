@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--ROOT MENU-->
+        <menuitem name="Fishing"
+                  id="base.menu_sc_root"
+                  sequence="-99"
+        />
+        <menuitem name="Operations"
+                  id="fishing_operations"
+                  parent="base.menu_sc_root"
+                  sequence="1"
+        />
+    </data>
+</odoo>

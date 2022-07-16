@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="stock_exit_form_view" model="ir.ui.view">
+        <field name="name">fishing.service.stock.wizard.form</field>
+        <field name="model">fishing.service.stock.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Quantity">
+                <h3 class="text-center">would you invoice this stock</h3>
+                <group>
+                    <field name="will_invoice"/>
+                </group>
+                <div attrs="{'invisible': [('will_invoice', '=', False)]}">
+                    <group>
+                        <group>
+                            <field name="start"/>
+                        </group>
+                        <group>
+                            <field name="end"/>
+                        </group>
+                    </group>
+                    <table style="width: 100%">
+                        <tr>
+                            <td style="width: 25%" class="text-right">
+                                <strong>Total hours :</strong>
+                            </td>
+                            <td style="width: 10%" class="text-left">
+                                <field name="total_duration" class="mt-2"/>
+                            </td>
+                             <td style="width: 30%" class="text-right">
+                                <strong>Price per Kg per hour</strong>
+                            </td>
+                            <td style="width: 25%">
+                                <field name="unit_price"/>
+                            </td>
+                            <td style="width: 10%">
+                                <span>/Kg/h</span>
+                            </td>
+
+                        </tr>
+
+                    </table>
+                </div>
+
+
+                <footer>
+                    <button type="object" name="action_exit" string="Submit" class="oe_highlight"/>
+                    <button special="cancel" string="Close" class="oe_highlight"/>
+                </footer>
+            </form>
+
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="app_view_order_form" model="ir.ui.view">
+            <field name="name">app.sale.order.form</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <!-- 右边的字段 -->
+                <xpath expr="//field[@name='payment_term_id']/.." position="inside">
+                    <field name='property_stock_transit' force_save="1"
+                           attrs="{'readonly':[('state', 'in', ['done','cancel'])]}"
+                           context="{'search_default_in_location': 1,
+                           'default_usage': 'internal',
+                           'default_capacity_type': 'model',}"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

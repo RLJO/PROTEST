@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+    <record model="account.tax" id="tva_vente_16">
+        <field name="description">TVA collectée (vente) 16%</field>
+        <field name="name">TVA 16%</field>
+        <field name="amount" eval="16"/>
+        <field name="amount_type">percent</field>
+        <field name="sequence" eval="1"/>
+        <field name="type_tax_use">sale</field>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base'
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('pcg_435700')
+            }),
+        ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base'
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('pcg_435700')
+            }),
+        ]"/>
+    </record>
+    <record model="account.tax" id="tva_vente_18">
+        <field name="description">TVA collectée (vente) 18%</field>
+        <field name="name">TVA 18%</field>
+        <field name="amount" eval="18"/>
+        <field name="amount_type">percent</field>
+        <field name="sequence" eval="2"/>
+        <field name="type_tax_use">sale</field>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base'
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('pcg_435000')
+            }),
+        ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base'
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('pcg_435000')
+            }),
+        ]"/>
+    </record>
+    <record model="account.tax" id="tva_achat_16">
+        <field name="description">TVA déductible (achat) 16%</field>
+        <field name="name">TVA 16% (achat)</field>
+        <field name="amount" eval="16"/>
+        <field name="amount_type">percent</field>
+        <field name="sequence" eval="4"/>
+        <field name="type_tax_use">purchase</field>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base'
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('pcg_435000')
+            }),
+        ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base'
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('pcg_435000')
+            }),
+        ]"/>
+    </record>
+    <record model="account.tax" id="tva_achat_18">
+        <field name="description">TVA déductible (achat) 18%</field>
+        <field name="name">TVA 18% (achat)</field>
+        <field name="amount" eval="18"/>
+        <field name="amount_type">percent</field>
+        <field name="sequence" eval="3"/>
+        <field name="type_tax_use">purchase</field>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base'
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('pcg_435000')
+            }),
+        ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base'
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('pcg_435000')
+            }),
+        ]"/>
+    </record>
+
+</odoo>

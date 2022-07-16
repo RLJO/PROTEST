@@ -1,0 +1,1970 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="pcg_060000" model="account.account">
+            <field name="name">Charges hors exploitation</field>
+            <field name="code">060000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_070000" model="account.account">
+            <field name="name">Revenus hors exploitation</field>
+            <field name="code">070000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_100100" model="account.account">
+            <field name="name">Capital souscrit-non appelé</field>
+            <field name="code">100100</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"></field>
+        </record>
+        <record id="pcg_100200" model="account.account">
+            <field name="name">apital souscrit-appelé non versé</field>
+            <field name="code">100200</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"></field>
+        </record>
+        <record id="pcg_100300" model="account.account">
+            <field name="name">Capital souscrit-appelé, versé</field>
+            <field name="code">100300</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"></field>
+        </record>
+        <record id="pcg_100310" model="account.account">
+            <field name="name">Capital amorti</field>
+            <field name="code">100310</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"></field>
+        </record>
+        <record id="pcg_104000" model="account.account">
+            <field name="name">Primes liées au capital social</field>
+            <field name="code">104000</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"></field>
+        </record>
+        <record id="pcg_104100" model="account.account">
+            <field name="name">Prime d’émission</field>
+            <field name="code">104100</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"></field>
+        </record>
+        <record id="pcg_104100" model="account.account">
+            <field name="name">Prime d’émission</field>
+            <field name="code">104100</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"></field>
+        </record>
+        <record id="pcg_104200" model="account.account">
+            <field name="name">Prime de fusion</field>
+            <field name="code">104200</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"></field>
+        </record>
+        <record id="pcg_104300" model="account.account">
+            <field name="name">Prime d’apport</field>
+            <field name="code">104300</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"></field>
+        </record>
+        <record id="pcg_105000" model="account.account">
+            <field name="name">Fonds de dotation</field>
+            <field name="code">105000</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"></field>
+        </record>
+        <record id="pcg_109000" model="account.account">
+            <field name="name">Compte de l’exploitant</field>
+            <field name="code">109000</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"></field>
+        </record>
+        <record id="pcg_110000" model="account.account">
+            <field name="name">Actionnaires, capital souscrit-non appelé.</field>
+            <field name="code">110000</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"></field>
+        </record>
+        <record id="pcg_111000" model="account.account">
+            <field name="name">Réserve légale</field>
+            <field name="code">111000</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"></field>
+        </record>
+        <record id="pcg_113000" model="account.account">
+            <field name="name">Réserves statuaires o</field>
+            <field name="code">113000</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"></field>
+        </record>
+        <record id="pcg_113000" model="account.account">
+            <field name="name">Réserves statuaires o</field>
+            <field name="code">113000</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"></field>
+        </record>
+        <record id="pcg_114000" model="account.account">
+            <field name="name">Réserves réglementées</field>
+            <field name="code">114000</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"></field>
+        </record>
+        <record id="pcg_115000" model="account.account">
+            <field name="name">Réserves libres</field>
+            <field name="code">115000</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"></field>
+        </record>
+        <record id="pcg_116000" model="account.account">
+            <field name="name">Autres réserves.</field>
+            <field name="code">116000</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"></field>
+        </record>
+        <record id="pcg_120000" model="account.account">
+            <field name="name">Report à nouveau (solde créditeur)</field>
+            <field name="code">120000</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"></field>
+        </record>
+        <record id="pcg_129000" model="account.account">
+            <field name="name">Report à nouveau (solde débiteur).</field>
+            <field name="code">129000</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"></field>
+        </record>
+        <record id="pcg_130000" model="account.account">
+            <field name="name">Résultat net (solde créditeur)</field>
+            <field name="code">130000</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"></field>
+        </record>
+        <record id="pcg_139000" model="account.account">
+            <field name="name">Résultat net (solde débiteur)</field>
+            <field name="code">139000</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"></field>
+        </record>
+        <record id="pcg_140000" model="account.account">
+            <field name="name">Subventions d’équipement reçues</field>
+            <field name="code">140000</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"></field>
+        </record>
+        <record id="pcg_149000" model="account.account">
+            <field name="name">Subventions d’équipement inscrites au compte</field>
+            <field name="code">149000</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"></field>
+        </record>
+        <record id="pcg_150000" model="account.account">
+            <field name="name">Plus-values à réinvestir</field>
+            <field name="code">150000</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"></field>
+        </record>
+        <record id="pcg_150800" model="account.account">
+            <field name="name">Amortissement spécial de remploi</field>
+            <field name="code">150800</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"></field>
+        </record>
+        <record id="pcg_151000" model="account.account">
+            <field name="name">Ecarts de réévaluation</field>
+            <field name="code">151000</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"></field>
+        </record>
+        <record id="pcg_152000" model="account.account">
+            <field name="name">Provisions réglementées.</field>
+            <field name="code">152000</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"></field>
+        </record>
+        <record id="pcg_160000" model="account.account">
+            <field name="name">Emprunts obligataires</field>
+            <field name="code">160000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_162000" model="account.account">
+            <field name="name">Emprunts auprès des établissements de</field>
+            <field name="code">162000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_165000" model="account.account">
+            <field name="name">Dépôts et cautionnements reçus</field>
+            <field name="code">165000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_167000" model="account.account">
+            <field name="name">Avances de l’Etat</field>
+            <field name="code">167000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_168000" model="account.account">
+            <field name="name">Autres emprunts et dettes assimilées</field>
+            <field name="code">168000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_169000" model="account.account">
+            <field name="name">Primes de remboursement des obligations.</field>
+            <field name="code">169000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_175000" model="account.account">
+            <field name="name">Dettes rattachées à des participations</field>
+            <field name="code">175000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_178000" model="account.account">
+            <field name="name">Dettes rattachées à des sociétés</field>
+            <field name="code">178000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_190100" model="account.account">
+            <field name="name">Provisions pour litiges</field>
+            <field name="code">190100</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_190200" model="account.account">
+            <field name="name">Provisions pour garanties données aux</field>
+            <field name="code">190200</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_190300" model="account.account">
+            <field name="name">Provisions pour pertes sur marchés</field>
+            <field name="code">190300</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_190400" model="account.account">
+            <field name="name">Provisions pour amendes, doubles droits,</field>
+            <field name="code">190400</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_190500" model="account.account">
+            <field name="name">Provisions pour pertes de change.</field>
+            <field name="code">190500</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_194000" model="account.account">
+            <field name="name">Provisions pour pensions et obligations</field>
+            <field name="code">194000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_195000" model="account.account">
+            <field name="name">Provisions pour impôts</field>
+            <field name="code">195000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_196000" model="account.account">
+            <field name="name">Provisions pour renouvellement des immobilisations</field>
+            <field name="code">196000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_200000" model="account.account">
+            <field name="name">Frais d’établissement</field>
+            <field name="code">200000</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_200100" model="account.account">
+            <field name="name">Frais relatifs au pacte social</field>
+            <field name="code">200100</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_200300" model="account.account">
+            <field name="name">Frais d’émission des emprunts</field>
+            <field name="code">200300</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_200400" model="account.account">
+            <field name="name">Frais d’acquisition des immobilisations</field>
+            <field name="code">200400</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_200500" model="account.account">
+            <field name="name">Frais exceptionnels à étaler sur</field>
+            <field name="code">200500</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_203000" model="account.account">
+            <field name="name">Frais de recherche et de</field>
+            <field name="code">203000</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_205000" model="account.account">
+            <field name="name">Valeurs incorporelles immobilisés</field>
+            <field name="code">205000</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_205100" model="account.account">
+            <field name="name">Droit au bail</field>
+            <field name="code">205100</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_205200" model="account.account">
+            <field name="name">Fonds commercial</field>
+            <field name="code">205200</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_205800" model="account.account">
+            <field name="name">Autres immobilisations incorporelles.</field>
+            <field name="code">205800</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_210000" model="account.account">
+            <field name="name">Terrains</field>
+            <field name="code">210000</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_210100" model="account.account">
+            <field name="name">Terrains de chantiers</field>
+            <field name="code">210100</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_210200" model="account.account">
+            <field name="name">Sous-sols et sur-sols</field>
+            <field name="code">210200</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_210300" model="account.account">
+            <field name="name">Terrains de gisement (carrières...)</field>
+            <field name="code">210300</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_211000" model="account.account">
+            <field name="name">Matériel d’exploitation</field>
+            <field name="code">211000</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_212000" model="account.account">
+            <field name="name">Matériel de transport</field>
+            <field name="code">212000</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_212200" model="account.account">
+            <field name="name">Installation</field>
+            <field name="code">212200</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_213000" model="account.account">
+            <field name="name">Matériel de bureau et informatique</field>
+            <field name="code">213000</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_214000" model="account.account">
+            <field name="name">Immobilisations animales (animaux de reproduction,</field>
+            <field name="code">214000</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_215000" model="account.account">
+            <field name="name">Autres immobilisations corporelles</field>
+            <field name="code">215000</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_218000" model="account.account">
+            <field name="name">Mobilier de bureau</field>
+            <field name="code">218000</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_218100" model="account.account">
+            <field name="name">Mobilier de logement</field>
+            <field name="code">218100</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_218200" model="account.account">
+            <field name="name">Installations, agencements, aménagements</field>
+            <field name="code">218200</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_218300" model="account.account">
+            <field name="name">Emballages récupérables identifiables.</field>
+            <field name="code">218300</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_230000" model="account.account">
+            <field name="name">Immobilisations corporelles en cours</field>
+            <field name="code">230000</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_237000" model="account.account">
+            <field name="name">Avances et acomptes versés sur</field>
+            <field name="code">237000</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_238000" model="account.account">
+            <field name="name">Avances et acomptes versés sur</field>
+            <field name="code">238000</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_260000" model="account.account">
+            <field name="name">Prêts et avances consentis à</field>
+            <field name="code">260000</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_264000" model="account.account">
+            <field name="name">Créances sur clients</field>
+            <field name="code">264000</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_265000" model="account.account">
+            <field name="name">Dépôts et cautionnements versés</field>
+            <field name="code">265000</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_268000" model="account.account">
+            <field name="name">Autres créances immobilisées.</field>
+            <field name="code">268000</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_270000" model="account.account">
+            <field name="name">Titres de participation</field>
+            <field name="code">270000,</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_272000" model="account.account">
+            <field name="name">Titres immobilisés</field>
+            <field name="code">272000</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_275000" model="account.account">
+            <field name="name">Créances rattachées à des participations</field>
+            <field name="code">275000</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_278000" model="account.account">
+            <field name="name">Créances rattachées à des sociétés</field>
+            <field name="code">278000</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_279000" model="account.account">
+            <field name="name">Versements restant à effectuer sur</field>
+            <field name="code">279000</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_280000" model="account.account">
+            <field name="name">Amortissements des frais d’établissement</field>
+            <field name="code">280000</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_280300" model="account.account">
+            <field name="name">Amortissements des frais de recherche</field>
+            <field name="code">280300</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_280500" model="account.account">
+            <field name="name">Amortissements des valeurs incorporelles immobilisées</field>
+            <field name="code">280500</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_280580" model="account.account">
+            <field name="name">Amortissements des autres immobilisations incorporelles</field>
+            <field name="code">280580</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_281030" model="account.account">
+            <field name="name">Amortissements des terrains de gisement</field>
+            <field name="code">281030</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_281200" model="account.account">
+            <field name="name">Amortissements des bâtiments</field>
+            <field name="code">281200</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_281220" model="account.account">
+            <field name="name">Amortissements des installations</field>
+            <field name="code">281220</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_281250" model="account.account">
+            <field name="name">Amortissements des ouvrages d’infrastructure</field>
+            <field name="code">281250</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_281300" model="account.account">
+            <field name="name">Amortissements du matériel de transport</field>
+            <field name="code">281300</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_281400" model="account.account">
+            <field name="name">Amortissements du matériel de bureau</field>
+            <field name="code">281400</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_281500" model="account.account">
+            <field name="name">Amortissements des immobilisations animales</field>
+            <field name="code">281500</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_281600" model="account.account">
+            <field name="name">Amortissements des autres immobilisations corporelles</field>
+            <field name="code">281600</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_290500" model="account.account">
+            <field name="name">Provisions pour dépréciation des valeurs</field>
+            <field name="code">290500</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_291000" model="account.account">
+            <field name="name">Provisions pour dépréciation des terrains</field>
+            <field name="code">291000</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_293000" model="account.account">
+            <field name="name">Provisions pour dépréciation des immobilisations</field>
+            <field name="code">293000</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"></field>
+        </record>
+        <record id="pcg_300000" model="account.account">
+            <field name="name">Marchandises (ou groupe) A</field>
+            <field name="code">300000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_301000" model="account.account">
+            <field name="name">Marchandises (ou groupe) B</field>
+            <field name="code">301000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_310000" model="account.account">
+            <field name="name">Matières premières</field>
+            <field name="code">310000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_312000" model="account.account">
+            <field name="name">Matières consommables</field>
+            <field name="code">312000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_312100" model="account.account">
+            <field name="name">Combustibles, carburants et lubrifiants</field>
+            <field name="code">312100</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_312200" model="account.account">
+            <field name="name">Fournitures et matériaux d’entretien</field>
+            <field name="code">312200</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_312300" model="account.account">
+            <field name="name">Fournitures d’atelier, d’usine et de</field>
+            <field name="code">312300</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_312400" model="account.account">
+            <field name="name">Petit outillage</field>
+            <field name="code">312400</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_312500" model="account.account">
+            <field name="name">Produits d’entretien</field>
+            <field name="code">312500</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_312600" model="account.account">
+            <field name="name">Fournitures de bureau et administratives</field>
+            <field name="code">312600</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_320000" model="account.account">
+            <field name="name">Emballages perdus</field>
+            <field name="code">320000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_325000" model="account.account">
+            <field name="name">Emballages récupérables non identifiables</field>
+            <field name="code">325000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_330000" model="account.account">
+            <field name="name">Produits en cours</field>
+            <field name="code">330000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_332000" model="account.account">
+            <field name="name">Travaux en cours</field>
+            <field name="code">332000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_335000" model="account.account">
+            <field name="name">Etudes en cours</field>
+            <field name="code">335000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_337000" model="account.account">
+            <field name="name">Prestations de services en cours.</field>
+            <field name="code">337000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_361000" model="account.account">
+            <field name="name">Déchets</field>
+            <field name="code">361000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_365000" model="account.account">
+            <field name="name">Rebuts</field>
+            <field name="code">365000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_366000" model="account.account">
+            <field name="name">Matières et produits de récupération.</field>
+            <field name="code">366000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_380000" model="account.account">
+            <field name="name">"Stocks en cours de route,"</field>
+            <field name="code">380000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_390000" model="account.account">
+            <field name="name">Provisions pour dépréciation des stocks</field>
+            <field name="code">390000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_392000" model="account.account">
+            <field name="name">Provisions pour dépréciation des stocks</field>
+            <field name="code">392000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_393000" model="account.account">
+            <field name="name">Provisions pour dépréciation des stocks</field>
+            <field name="code">393000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_394000" model="account.account">
+            <field name="name">Provisions pour dépréciation des stocks</field>
+            <field name="code">394000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_400000" model="account.account">
+            <field name="name">Fournisseurs</field>
+            <field name="code">400000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_payable"></field>
+        </record>
+        <record id="pcg_400300" model="account.account">
+            <field name="name">Fournisseurs sous-traitants</field>
+            <field name="code">400300</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_payable"></field>
+        </record>
+        <record id="pcg_400400" model="account.account">
+            <field name="name">Fournisseurs de biens d’équipement</field>
+            <field name="code">400400</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_payable"></field>
+        </record>
+        <record id="pcg_400500" model="account.account">
+            <field name="name">Fournisseurs, sociétés apparentées</field>
+            <field name="code">400500</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_payable"></field>
+        </record>
+        <record id="pcg_408000" model="account.account">
+            <field name="name">Fournisseurs, factures à recevoir (non)</field>
+            <field name="code">408000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_payable"></field>
+        </record>
+        <record id="pcg_409000" model="account.account">
+            <field name="name">Fournisseurs débiteurs</field>
+            <field name="code">409000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_payable"></field>
+        </record>
+        <record id="pcg_409600" model="account.account">
+            <field name="name">Fournisseurs, créances pour emballages et</field>
+            <field name="code">409600</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_payable"></field>
+        </record>
+        <record id="pcg_409700" model="account.account">
+            <field name="name">Rabais, remises et ristournes à</field>
+            <field name="code">409700</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_payable"></field>
+        </record>
+        <record id="pcg_410000" model="account.account">
+            <field name="name">Clients et comptes rattachés</field>
+            <field name="code">410000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_receivable"></field>
+        </record>
+        <record id="pcg_412000" model="account.account">
+            <field name="name">Clients douteux</field>
+            <field name="code">412000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_receivable"></field>
+        </record>
+
+        <record id="pcg_418000" model="account.account">
+            <field name="name">Clients, factures à établir</field>
+            <field name="code">418000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_receivable"></field>
+        </record>
+        <record id="pcg_419000" model="account.account">
+            <field name="name">Clients créditeurs</field>
+            <field name="code">419000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_payable"></field>
+        </record>
+        <record id="pcg_420000" model="account.account">
+            <field name="name">Personnel et comptes rattachés</field>
+            <field name="code">420000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_payable"></field>
+        </record>
+        <record id="pcg_425000" model="account.account">
+            <field name="name">Avances et acomptes au personnel</field>
+            <field name="code">425000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_426000" model="account.account">
+            <field name="name">Dépôts du personnel</field>
+            <field name="code">426000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_427000" model="account.account">
+            <field name="name">Oppositions</field>
+            <field name="code">427000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_428000" model="account.account">
+            <field name="name">Dettes provisionnées pour congés à</field>
+            <field name="code">428000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_430000" model="account.account">
+            <field name="name">Etat et autres collectivités publiques</field>
+            <field name="code">430000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_payable"></field>
+        </record>
+        <record id="pcg_432000" model="account.account">
+            <field name="name">Impôts sur les bénéfices (et</field>
+            <field name="code">432000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_payable"></field>
+        </record>
+
+
+        <record id="pcg_433000" model="account.account">
+            <field name="name">Impôts recouvrables sur les tiers</field>
+            <field name="code">433000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_payable"></field>
+        </record>
+        <record id="pcg_434000" model="account.account">
+            <field name="name">Impôts sur traitements et salaires</field>
+            <field name="code">434000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_payable"></field>
+        </record>
+        <record id="pcg_435000" model="account.account">
+            <field name="name">État, TVA déductible</field>
+            <field name="code">435000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_435500" model="account.account">
+            <field name="name">État, TVA à décaisser</field>
+            <field name="code">435500</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_435700" model="account.account">
+            <field name="name">État, TVA collectée</field>
+            <field name="code">435700</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_436000" model="account.account">
+            <field name="name">Douanes et autres impôts et</field>
+            <field name="code">436000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_payable"></field>
+        </record>
+        <record id="pcg_437000" model="account.account">
+            <field name="name">Obligations cautionnées</field>
+            <field name="code">437000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_payable"></field>
+        </record>
+        <record id="pcg_438000" model="account.account">
+            <field name="name">Charges à payer (et produits</field>
+            <field name="code">438000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_payable"></field>
+        </record>
+        <record id="pcg_440000" model="account.account">
+            <field name="name">Sécurité sociale et autres organismes</field>
+            <field name="code">440000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_payable"></field>
+        </record>
+        <record id="pcg_450000" model="account.account">
+            <field name="name">Associés - Comptes courants -</field>
+            <field name="code">450000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_451000" model="account.account">
+            <field name="name">Associés - capital souscrit et</field>
+            <field name="code">451000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_452000" model="account.account">
+            <field name="name">Associés - versements anticipés et</field>
+            <field name="code">452000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_453000" model="account.account">
+            <field name="name">Actionnaires défaillants</field>
+            <field name="code">453000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_454000" model="account.account">
+            <field name="name">Associés - capital à rembourser</field>
+            <field name="code">454000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_455000" model="account.account">
+            <field name="name">Associés - dividendes à payer</field>
+            <field name="code">455000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_456000" model="account.account">
+            <field name="name">Comptes courants des associés et</field>
+            <field name="code">456000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_457000" model="account.account">
+            <field name="name">Comptes des sociétés du groupe</field>
+            <field name="code">457000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_458000" model="account.account">
+            <field name="name">Associés - opérations faites en</field>
+            <field name="code">458000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_460000" model="account.account">
+            <field name="name">Débiteurs et créditeurs divers</field>
+            <field name="code">460000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_480000" model="account.account">
+            <field name="name">Comptes de régularisation et d’attente</field>
+            <field name="code">480000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_481000" model="account.account">
+            <field name="name">Produits constatés d’avance</field>
+            <field name="code">481000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_484000" model="account.account">
+            <field name="name">Différences de conversion sur opérations</field>
+            <field name="code">484000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_485000" model="account.account">
+            <field name="name">Différences de conversion sur opérations</field>
+            <field name="code">485000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_486000" model="account.account">
+            <field name="name">Comptes d’abonnement des charges et</field>
+            <field name="code">486000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_490000" model="account.account">
+            <field name="name">Provisions pour dépréciation des comptes</field>
+            <field name="code">490000</field>
+            <field name="reconcile">True</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_500000" model="account.account">
+            <field name="name">Emprunts à court terme</field>
+            <field name="code">500000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_510000" model="account.account">
+            <field name="name">Prêts à court terme</field>
+            <field name="code">510000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_514101" model="account.account">
+            <field name="name">Paiements Entrants en Suspens</field>
+            <field name="code">514101</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_514102" model="account.account">
+            <field name="name">Paiements Sortants en Suspens</field>
+            <field name="code">514102</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"></field>
+        </record>
+        <record id="pcg_520000" model="account.account">
+            <field name="name">Valeurs mobilières de placement</field>
+            <field name="code">520000</field>
+            <field name="user_type_id" ref="account.data_account_type_liquidity"></field>
+        </record>
+        <record id="pcg_525000" model="account.account">
+            <field name="name">Autres titres cinférant un droit</field>
+            <field name="code">525000</field>
+            <field name="user_type_id" ref="account.data_account_type_liquidity"></field>
+        </record>
+        <record id="pcg_526000" model="account.account">
+            <field name="name">Obligations</field>
+            <field name="code">526000</field>
+            <field name="user_type_id" ref="account.data_account_type_liquidity"></field>
+        </record>
+        <record id="pcg_527000" model="account.account">
+            <field name="name">Bons du Trésor et bons</field>
+            <field name="code">527000</field>
+            <field name="user_type_id" ref="account.data_account_type_liquidity"></field>
+        </record>
+        <record id="pcg_528000" model="account.account">
+            <field name="name">Autres valeurs mobilières conférant un</field>
+            <field name="code">528000</field>
+            <field name="user_type_id" ref="account.data_account_type_liquidity"></field>
+        </record>
+        <record id="pcg_529000" model="account.account">
+            <field name="name">Versements restant à effectuer sur</field>
+            <field name="code">529000</field>
+            <field name="user_type_id" ref="account.data_account_type_liquidity"></field>
+        </record>
+        <record id="pcg_540000" model="account.account">
+            <field name="name">Chèques à encaisser</field>
+            <field name="code">540000</field>
+            <field name="user_type_id" ref="account.data_account_type_liquidity"></field>
+        </record>
+
+        <record id="pcg_541000" model="account.account">
+            <field name="name">Effets à l’encaissement</field>
+            <field name="code">541000</field>
+            <field name="user_type_id" ref="account.data_account_type_liquidity"></field>
+        </record>
+        <record id="pcg_542000" model="account.account">
+            <field name="name">Effets à l’escompte</field>
+            <field name="code">542000</field>
+            <field name="user_type_id" ref="account.data_account_type_liquidity"></field>
+        </record>
+        <record id="pcg_550000" model="account.account">
+            <field name="name">Banques : banques en Mauritanie</field>
+            <field name="code">550000</field>
+            <field name="user_type_id" ref="account.data_account_type_liquidity"></field>
+        </record>
+        <record id="pcg_554000" model="account.account">
+            <field name="name">Chèques postaux</field>
+            <field name="code">554000</field>
+            <field name="user_type_id" ref="account.data_account_type_liquidity"></field>
+        </record>
+        <record id="pcg_555000" model="account.account">
+            <field name="name">Caisse du Trésor</field>
+            <field name="code">555000</field>
+            <field name="user_type_id" ref="account.data_account_type_liquidity"></field>
+        </record>
+        <record id="pcg_560000" model="account.account">
+            <field name="name">Caisse</field>
+            <field name="code">560000</field>
+            <field name="user_type_id" ref="account.data_account_type_liquidity"></field>
+        </record>
+        <record id="pcg_570000" model="account.account">
+            <field name="name">Régies d’avances et accréditifs</field>
+            <field name="code">570000</field>
+            <field name="user_type_id" ref="account.data_account_type_liquidity"></field>
+        </record>
+        <record id="pcg_580000" model="account.account">
+            <field name="name">Virements internes</field>
+            <field name="code">580000</field>
+            <field name="user_type_id" ref="account.data_account_type_liquidity"></field>
+        </record>
+        <record id="pcg_590000" model="account.account">
+            <field name="name">Provisions pour dépréciation des comptes</field>
+            <field name="code">590000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_591000" model="account.account">
+            <field name="name">Provisions pour dépréciation des prêts</field>
+            <field name="code">591000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_592000" model="account.account">
+            <field name="name">Provisions pour dépréciation des valeurs</field>
+            <field name="code">592000</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"></field>
+        </record>
+        <record id="pcg_600000" model="account.account">
+            <field name="name">Marchandises</field>
+            <field name="code">600000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_601000" model="account.account">
+            <field name="name">Matières premières et autres approvisionnements</field>
+            <field name="code">601000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_601200" model="account.account">
+            <field name="name">Matières et fournitures consommables</field>
+            <field name="code">601200</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_601210" model="account.account">
+            <field name="name">Combustibles, carburants et lubrifiants</field>
+            <field name="code">601210</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_601220" model="account.account">
+            <field name="name">Fournitures et matériaux d’entretien</field>
+            <field name="code">601220</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_601230" model="account.account">
+            <field name="name">Fournitures d’atelier, d’usine et de</field>
+            <field name="code">601230</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_601240" model="account.account">
+            <field name="name">Petit outillage</field>
+            <field name="code">601240</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_601250" model="account.account">
+            <field name="name">Produits d’entretien</field>
+            <field name="code">601250</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_601260" model="account.account">
+            <field name="name">Fournitures de bureau et administratives</field>
+            <field name="code">601260</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_601280" model="account.account">
+            <field name="name">Autres matières et fournitures</field>
+            <field name="code">601280</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_602000" model="account.account">
+            <field name="name">Emballages</field>
+            <field name="code">602000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_602500" model="account.account">
+            <field name="name">Emballages récupérables non identifiables</field>
+            <field name="code">602500</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_602700" model="account.account">
+            <field name="name">Emballages à usage mixte</field>
+            <field name="code">602700</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_603000" model="account.account">
+            <field name="name">Variation de stocks</field>
+            <field name="code">603000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_603100" model="account.account">
+            <field name="name">Variation de stocks de matières</field>
+            <field name="code">603100</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_606000" model="account.account">
+            <field name="name">Fournitures non stockables (eau-énergie)</field>
+            <field name="code">606000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_606100" model="account.account">
+            <field name="name">Combustibles, carburant et lubrifiants</field>
+            <field name="code">606100</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_606200" model="account.account">
+            <field name="name">Fournitures et matériaux d’entretien</field>
+            <field name="code">606200</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_606300" model="account.account">
+            <field name="name">Fournitures d’atelier, d’usine et de</field>
+            <field name="code">606300</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_606400" model="account.account">
+            <field name="name">Petit outillage</field>
+            <field name="code">606400</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_606500" model="account.account">
+            <field name="name">Produits d’entretien</field>
+            <field name="code">606500</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_606600" model="account.account">
+            <field name="name">Fournitures de bureau et administratives</field>
+            <field name="code">606600</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_606700" model="account.account">
+            <field name="name">Vêtements de travail</field>
+            <field name="code">606700</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_606800" model="account.account">
+            <field name="name">Autres matières et fournitures</field>
+            <field name="code">606800</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_610000" model="account.account">
+            <field name="name">Achats de sous-traitance</field>
+            <field name="code">610000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_620000" model="account.account">
+            <field name="name">charges externes liées à l’investissement</field>
+            <field name="code">620000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_620200" model="account.account">
+            <field name="name">Redevances de crédit bail</field>
+            <field name="code">620200</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_620300" model="account.account">
+            <field name="name">Malis sur emballages restitués</field>
+            <field name="code">620300</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_621000" model="account.account">
+            <field name="name">Travaux d’entretien et de réparation</field>
+            <field name="code">621000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_623000" model="account.account">
+            <field name="name">Primes d’assurance</field>
+            <field name="code">623000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_623400" model="account.account">
+            <field name="name">Assurances transport</field>
+            <field name="code">623400</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_623800" model="account.account">
+            <field name="name">Autres risques</field>
+            <field name="code">623800</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_624000" model="account.account">
+            <field name="name">Etudes et recherches</field>
+            <field name="code">624000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_625000" model="account.account">
+            <field name="name">Documentation générale et technique</field>
+            <field name="code">625000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_626000" model="account.account">
+            <field name="name">Frais de colloques, séminaires, conférences</field>
+            <field name="code">626000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_630000" model="account.account">
+            <field name="name">Charges externes liées à l’activité</field>
+            <field name="code">630000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_630100" model="account.account">
+            <field name="name">Transports sur ventes</field>
+            <field name="code">630100</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_630200" model="account.account">
+            <field name="name">Transports entre établissements</field>
+            <field name="code">630200,</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_630500" model="account.account">
+            <field name="name">Transports collectifs du personnel</field>
+            <field name="code">630500</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_630800" model="account.account">
+            <field name="name">Autres frais de transport (déménagements...)</field>
+            <field name="code">630800</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_631000" model="account.account">
+            <field name="name">Déplacements, missions, réceptions</field>
+            <field name="code">631000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_631500" model="account.account">
+            <field name="name">Missions</field>
+            <field name="code">631500</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_631700" model="account.account">
+            <field name="name">Réceptions</field>
+            <field name="code">631700</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_632000" model="account.account">
+            <field name="name">Frais postaux et télécommunications</field>
+            <field name="code">632000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_633000" model="account.account">
+            <field name="name">Rémunérations d’intermédiaires et honoraires</field>
+            <field name="code">633000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_633100" model="account.account">
+            <field name="name">Honoraires (services d’ingénierie, d’architecte, de</field>
+            <field name="code">633100</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_633300" model="account.account">
+            <field name="name">Traitement automatique des informations, organismes</field>
+            <field name="code">633300</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_633400" model="account.account">
+            <field name="name">Commissions et courtages (et rémunérations</field>
+            <field name="code">633400</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_634000" model="account.account">
+            <field name="name">Publicité et propagande, publications, promotion</field>
+            <field name="code">634000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_635000" model="account.account">
+            <field name="name">Services bancaires</field>
+            <field name="code">635000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_635100" model="account.account">
+            <field name="name">Frais de tenue de compte</field>
+            <field name="code">635100</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_635400" model="account.account">
+            <field name="name">Frais sur effets</field>
+            <field name="code">635400</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_635500" model="account.account">
+            <field name="name">Frais sur titres</field>
+            <field name="code">635500</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_635600" model="account.account">
+            <field name="name">Locations de coffres</field>
+            <field name="code">635600</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_637000" model="account.account">
+            <field name="name">Quote-part des frais du siège</field>
+            <field name="code">637000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_638000" model="account.account">
+            <field name="name">Charges diverses (cotisations, frais de</field>
+            <field name="code">638000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_640000" model="account.account">
+            <field name="name">Charges et pertes diverses</field>
+            <field name="code">640000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_641000" model="account.account">
+            <field name="name">Redevances pour concessions, brevets, licences,</field>
+            <field name="code">641000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_642000" model="account.account">
+            <field name="name">RRR accordés</field>
+            <field name="code">642000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_643000" model="account.account">
+            <field name="name">Jetons de présence</field>
+            <field name="code">643000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_645000" model="account.account">
+            <field name="name">Dons, pourboires et subventions accordées</field>
+            <field name="code">645000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_647000" model="account.account">
+            <field name="name">Amendes pénales (sur marchés, pour</field>
+            <field name="code">647000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_648000" model="account.account">
+            <field name="name">Pertes d’actif non immobilisé (manquants</field>
+            <field name="code">648000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_648100" model="account.account">
+            <field name="name">Pertes sur actif immobilisé</field>
+            <field name="code">648100</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_648200" model="account.account">
+            <field name="name">Lots</field>
+            <field name="code">648200</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_648300" model="account.account">
+            <field name="name">Malis provenant de clauses d’indexation</field>
+            <field name="code">648300</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_648400" model="account.account">
+            <field name="name">Malis provenant du rachat par</field>
+            <field name="code">648400</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_650000" model="account.account">
+            <field name="name">Frais de personnel</field>
+            <field name="code">650000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_650100" model="account.account">
+            <field name="name">Main-d’oeuvre occasionnelle</field>
+            <field name="code">650100</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_650300" model="account.account">
+            <field name="name">Heures supplémentaires</field>
+            <field name="code">650300</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_650500" model="account.account">
+            <field name="name">congés payés</field>
+            <field name="code">650500</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_650600" model="account.account">
+            <field name="name">Primes et gratifications</field>
+            <field name="code">650600</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_650700" model="account.account">
+            <field name="name">Indemnités de préavis et de</field>
+            <field name="code">650700</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_650800" model="account.account">
+            <field name="name">Indemnités et avantages divers en</field>
+            <field name="code">650800</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_651000" model="account.account">
+            <field name="name">Rémunérations du travail de l’exploitant</field>
+            <field name="code">651000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_652000" model="account.account">
+            <field name="name">Charges sociales et de prévoyance</field>
+            <field name="code">652000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_652500" model="account.account">
+            <field name="name">Cotisations aux caisses de retraite</field>
+            <field name="code">652500</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_652700" model="account.account">
+            <field name="name">Prestations directes - familiales -</field>
+            <field name="code">652700</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_654000" model="account.account">
+            <field name="name">Cotisations sociales, personnelles de l’exploitant</field>
+            <field name="code">654000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_655000" model="account.account">
+            <field name="name">Autres charges sociales</field>
+            <field name="code">655000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_655100" model="account.account">
+            <field name="name">Médecine du travail</field>
+            <field name="code">655100</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_655200" model="account.account">
+            <field name="name">soins médicaux et pharmacie</field>
+            <field name="code">655200</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_656000" model="account.account">
+            <field name="name">Frais de recyclage et de</field>
+            <field name="code">656000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_657000" model="account.account">
+            <field name="name">Avantages en nature (logement, voiture,</field>
+            <field name="code">657000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_660000" model="account.account">
+            <field name="name">"Impôts, taxes et versements assimilés"</field>
+            <field name="code">660000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_660100" model="account.account">
+            <field name="name">Patente et droit de licence</field>
+            <field name="code">660100</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_660200" model="account.account">
+            <field name="name">Taxe sur les véhicules à</field>
+            <field name="code">660200</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_660500" model="account.account">
+            <field name="name">Taxe d’apprentissage</field>
+            <field name="code">660500</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_660600" model="account.account">
+            <field name="name">Impôts régionaux (taxe d’habitation et</field>
+            <field name="code">660600</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_660700" model="account.account">
+            <field name="name">Taxe sur le bétail</field>
+            <field name="code">660700</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_661000" model="account.account">
+            <field name="name">Taxes et impôts indirects</field>
+            <field name="code">661000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+
+        <record id="pcg_661100" model="account.account">
+            <field name="name">Taxes de consommation (produits pétroliers,</field>
+            <field name="code">661100</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_661800" model="account.account">
+            <field name="name">Autres impôts indirects et taxes</field>
+            <field name="code">661800</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_662000" model="account.account">
+            <field name="name">Enregistrement et timbre</field>
+            <field name="code">662000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_662100" model="account.account">
+            <field name="name">Droits de timbre</field>
+            <field name="code">662100</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_662800" model="account.account">
+            <field name="name">Autres droits</field>
+            <field name="code">662800</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_663000" model="account.account">
+            <field name="name">Droits de douane</field>
+            <field name="code">663000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_663100" model="account.account">
+            <field name="name">Droits de douane à l’exportation</field>
+            <field name="code">663100</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_664000" model="account.account">
+            <field name="name">Impôts et taxes dans le</field>
+            <field name="code">664000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_665000" model="account.account">
+            <field name="name">Impôts et taxes dans le</field>
+            <field name="code">665000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_666000" model="account.account">
+            <field name="name">Impôts et taxes exigibles à</field>
+            <field name="code">666000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_670000" model="account.account">
+            <field name="name">Charges financières</field>
+            <field name="code">670000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_672000" model="account.account">
+            <field name="name">Intérêts des comptes courants et</field>
+            <field name="code">672000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_673000" model="account.account">
+            <field name="name">Intérêts bancaires et sur opérations</field>
+            <field name="code">673000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_674000" model="account.account">
+            <field name="name">Intérêts des obligations cautionnées</field>
+            <field name="code">674000,</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_676000" model="account.account">
+            <field name="name">Escomptes accordés</field>
+            <field name="code">676000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_678000" model="account.account">
+            <field name="name">Différences de change (pertes)</field>
+            <field name="code">678000</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"></field>
+        </record>
+        <record id="pcg_680000" model="account.account">
+            <field name="name">Dotations aux comptes d’amortissements et</field>
+            <field name="code">680000</field>
+            <field name="user_type_id" ref="account.data_account_type_depreciation"></field>
+        </record>
+        <record id="pcg_685000" model="account.account">
+            <field name="name">Dotations aux provisions pour dépréciatio</field>
+            <field name="code">685000</field>
+            <field name="user_type_id" ref="account.data_account_type_depreciation"></field>
+        </record>
+        <record id="pcg_686000" model="account.account">
+            <field name="name">Dotations aux provisions réglementées</field>
+            <field name="code">686000</field>
+            <field name="user_type_id" ref="account.data_account_type_depreciation"></field>
+        </record>
+        <record id="pcg_687000" model="account.account">
+            <field name="name">Dotations aux provisions pour risques</field>
+            <field name="code">687000</field>
+            <field name="user_type_id" ref="account.data_account_type_depreciation"></field>
+        </record>
+        <record id="pcg_700000" model="account.account">
+            <field name="name">Ventes de marchandises. Production vendue</field>
+            <field name="code">700000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_700100" model="account.account">
+            <field name="name">Ventes de marchandises exonérées de TVA</field>
+            <field name="code">700100</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_700110" model="account.account">
+            <field name="name">Ventes a l'nterieur</field>
+            <field name="code">700110</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_700120" model="account.account">
+            <field name="name">Exportation de produits exonérés</field>
+            <field name="code">700120</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_700130" model="account.account">
+            <field name="name">Exportation de produits imposables</field>
+            <field name="code">700130</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_700210" model="account.account">
+            <field name="name">Ventes à taux réduit</field>
+            <field name="code">700210</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_700220" model="account.account">
+            <field name="name">Ventes à taux normal</field>
+            <field name="code">700220</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_701000" model="account.account">
+            <field name="name">Production vendue (travaux, prestations de</field>
+            <field name="code">701000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_701010" model="account.account">
+            <field name="name">Production de bien exonérés de</field>
+            <field name="code">701010</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_701011" model="account.account">
+            <field name="name">Production de biens exonérés à</field>
+            <field name="code">701011</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_701012" model="account.account">
+            <field name="name">Exportations de produits exonérés</field>
+            <field name="code">701012</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_701013" model="account.account">
+            <field name="name">Exportations de produits imposables</field>
+            <field name="code">701013</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_701020" model="account.account">
+            <field name="name">Production de biens soumis à</field>
+            <field name="code">701020</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_701021" model="account.account">
+            <field name="name">Production de bien soumis à</field>
+            <field name="code">701021</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_701022" model="account.account">
+            <field name="name">Production de biens soumis à</field>
+            <field name="code">701022</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_701200" model="account.account">
+            <field name="name">Travaux</field>
+            <field name="code">701200</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_701210" model="account.account">
+            <field name="name">Travaux exonérés de TVA</field>
+            <field name="code">701210</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_701211" model="account.account">
+            <field name="name">Travaux exonérés à l’intérieur</field>
+            <field name="code">701211</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_701212" model="account.account">
+            <field name="name">Exportations de travaux exonérés</field>
+            <field name="code">701212</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_701213" model="account.account">
+            <field name="name">Exportations de travaux imposables</field>
+            <field name="code">701213</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_701220" model="account.account">
+            <field name="name">Travaux soumis à TVA</field>
+            <field name="code">701220</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_701221" model="account.account">
+            <field name="name">Travaux soumis à taux réduit</field>
+            <field name="code">701221</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_701222" model="account.account">
+            <field name="name">Travaux soumis à taux normal</field>
+            <field name="code">701222</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_701500" model="account.account">
+            <field name="name">Etudes</field>
+            <field name="code">701500</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_701510" model="account.account">
+            <field name="name">Etudes exonérées de TVA</field>
+            <field name="code">701510</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_701511" model="account.account">
+            <field name="name">Etudes exonérées à l’intérieur</field>
+            <field name="code">701511</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_701512" model="account.account">
+            <field name="name">Exportations d’études exonérées</field>
+            <field name="code">701512</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_701513" model="account.account">
+            <field name="name">Exportations d’études imposables</field>
+            <field name="code">701513</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_701520" model="account.account">
+            <field name="name">Etudes soumises à la TVA</field>
+            <field name="code">701520</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_701521" model="account.account">
+            <field name="name">Etudes soumises à taux</field>
+            <field name="code">701521</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_701522" model="account.account">
+            <field name="name">Etudes soumises à taux normal</field>
+            <field name="code">701522</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_701700" model="account.account">
+            <field name="name">Prestations de services</field>
+            <field name="code">701700</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_701710" model="account.account">
+            <field name="name">Prestations de services exonérées de</field>
+            <field name="code">701710</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_701711" model="account.account">
+            <field name="name">Prestations de services exonérées à</field>
+            <field name="code">701711</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_701713" model="account.account">
+            <field name="name">Exportations de prestations de services</field>
+            <field name="code">701713</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_701720" model="account.account">
+            <field name="name">Prestations de services soumises à</field>
+            <field name="code">701720</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_701721" model="account.account">
+            <field name="name">Prestations de services soumises à</field>
+            <field name="code">701721</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_701722" model="account.account">
+            <field name="name">Prestation de services soumises à</field>
+            <field name="code">701722</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_706000" model="account.account">
+            <field name="name">Produits des activités annexes</field>
+            <field name="code">706000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_706100" model="account.account">
+            <field name="name">commissions et courtages</field>
+            <field name="code">706100</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_706200" model="account.account">
+            <field name="name">Locations diverses</field>
+            <field name="code">706200</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_706300" model="account.account">
+            <field name="name">Bonis sur reprises d’emballages</field>
+            <field name="code">706300,</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_706400" model="account.account">
+            <field name="name">Ports facturés aux clients</field>
+            <field name="code">706400</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_706500" model="account.account">
+            <field name="name">Ventes d’emballages récupérables</field>
+            <field name="code">706500</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_706510" model="account.account">
+            <field name="name">Ventes d’emballages produits</field>
+            <field name="code">706510</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_706800" model="account.account">
+            <field name="name">Autres produits des activités annexes</field>
+            <field name="code">706800</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_71000" model="account.account">
+            <field name="name">Production stockée ou destockage (variation</field>
+            <field name="code">710000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_713000" model="account.account">
+            <field name="name">Variation des « en cours</field>
+            <field name="code">713000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_713200" model="account.account">
+            <field name="name">Travaux en cours</field>
+            <field name="code">713200</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_713500" model="account.account">
+            <field name="name">Etudes en cours</field>
+            <field name="code">713500</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_713700" model="account.account">
+            <field name="name">Prestations de services en cours</field>
+            <field name="code">713700</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_714000" model="account.account">
+            <field name="name">Variation des produits intermédiaires</field>
+            <field name="code">714000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_715000" model="account.account">
+            <field name="name">Variation des produits finis</field>
+            <field name="code">715000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_716000" model="account.account">
+            <field name="name">Variation des produits résiduels</field>
+            <field name="code">716000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_720000" model="account.account">
+            <field name="name">Production de l’entreprise pour elle-même</field>
+            <field name="code">720000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_722000" model="account.account">
+            <field name="name">Production immobilisée (auto-équipement)</field>
+            <field name="code">722000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_723000" model="account.account">
+            <field name="name">Production auto-consommée</field>
+            <field name="code">723000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_726000" model="account.account">
+            <field name="name">Services rendus par l’entreprise pour</field>
+            <field name="code">726000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_726000" model="account.account">
+            <field name="name">Services rendus par l’entreprise pour</field>
+            <field name="code">726000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_740000" model="account.account">
+            <field name="name">Produits et profits divers</field>
+            <field name="code">740000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_741000" model="account.account">
+            <field name="name">Redevances pour concessions, brevet, licences,</field>
+            <field name="code">741000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_742000" model="account.account">
+            <field name="name">RRR obtenus</field>
+            <field name="code">742000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_743000" model="account.account">
+            <field name="name">Jetons de présence et rémunérations</field>
+            <field name="code">743000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_744000" model="account.account">
+            <field name="name">Subventions d’équipement, quote-part virée aux</field>
+            <field name="code">744000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_745000" model="account.account">
+            <field name="name">Cotisations et dons reçus</field>
+            <field name="code">745000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_746000" model="account.account">
+            <field name="name">Rentrée des créances amorties</field>
+            <field name="code">746000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_747000" model="account.account">
+            <field name="name">Dégrèvements d’impôts</field>
+            <field name="code">747000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_748000" model="account.account">
+            <field name="name">Autres produits et profits exceptionnels</field>
+            <field name="code">748000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_748200" model="account.account">
+            <field name="name">Lots</field>
+            <field name="code">748200</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_748300" model="account.account">
+            <field name="name">Bonis provenant de clauses d’indexation</field>
+            <field name="code">748300</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_748400" model="account.account">
+            <field name="name">Bonis provenant du rachat par</field>
+            <field name="code">748400</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_760000" model="account.account">
+            <field name="name">Subventions d’exploitation et subventions d’équilibre</field>
+            <field name="code">760000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_770000" model="account.account">
+            <field name="name">Produits financiers</field>
+            <field name="code">770000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_771000" model="account.account">
+            <field name="name">Revenus des titres immobilisés et</field>
+            <field name="code">771000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_772000" model="account.account">
+            <field name="name">Revenus des comptes courants et</field>
+            <field name="code">772000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_776000" model="account.account">
+            <field name="name">Escomptes obtenus</field>
+            <field name="code">776000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_778000" model="account.account">
+            <field name="name">Différences de change (gains)</field>
+            <field name="code">778000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_780000" model="account.account">
+            <field name="name">Reprises sur amortissements et provisions</field>
+            <field name="code">780000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_785000" model="account.account">
+            <field name="name">Reprises sur provisions pour dépréciation</field>
+            <field name="code">785000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_787000" model="account.account">
+            <field name="name">Reprises sur provisions pour risques</field>
+            <field name="code">787000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_790000" model="account.account">
+            <field name="name">frais à immobiliser ou à</field>
+            <field name="code">790000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_791000" model="account.account">
+            <field name="name">Frais à immobiliser</field>
+            <field name="code">791000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_792000" model="account.account">
+            <field name="name">Frais à transférer</field>
+            <field name="code">792000</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_792100" model="account.account">
+            <field name="name">Frais à transférer aux comptes</field>
+            <field name="code">792100</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+        <record id="pcg_792200" model="account.account">
+            <field name="name">Avantages en nature</field>
+            <field name="code">792200</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"></field>
+        </record>
+
+    </data>
+</odoo>

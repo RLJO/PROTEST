@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="account_fr_tag_salaires" model="account.account.tag">
+        <field name="name">Salaires</field>
+        <field name="applicability">accounts</field>
+    </record>
+
+    <record id="account_fr_tag_charges_sociales" model="account.account.tag">
+        <field name="name">Charges Sociales</field>
+        <field name="applicability">accounts</field>
+    </record>
+
+    <!-- Chart template -->
+    <record id="l10n_fr_pcg_chart_template" model="account.chart.template">
+        <field name="name">Plan Comptable Général (Mauritania)</field>
+        <field name="currency_id" ref="base.MRU"/>
+        <field name="code_digits" eval="6"/>
+        <field name="bank_account_code_prefix">550</field>
+        <field name="cash_account_code_prefix">56</field>
+        <field name="transfer_account_code_prefix">58</field>
+        <field name="complete_tax_set" eval="True"/>
+
+    </record>
+</odoo>

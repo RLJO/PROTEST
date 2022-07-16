@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="pcg_40" model="account.group">
+            <field name="name">Fournisseurs et comptes rattachés</field>
+            <field name="code_prefix_start">40</field>
+            <field name="code_prefix_end">40</field>
+        </record>
+        <record id="pcg_41" model="account.group">
+            <field name="name">Clients et comptes rattachés</field>
+            <field name="code_prefix_start">41</field>
+            <field name="code_prefix_end">41</field>
+        </record>
+    </data>
+</odoo>
