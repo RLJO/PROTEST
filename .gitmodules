@@ -2,3 +2,8 @@
 	path = RLJO/Arabb
 	url = git@github.com:RLJO/Arabb.git
 	branch = Staging2
+
+[submodule "RLJO/TEST_WEB_SITE_THEME"]
+	path = RLJO/TEST_WEB_SITE_THEME
+	url = git@github.com:RLJO/TEST_WEB_SITE_THEME.git
+	branch = main
