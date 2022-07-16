@@ -22,3 +22,8 @@
 	path = Jarsa/transport-management-system
 	url = git@github.com:Jarsa/transport-management-system.git
 	branch = 15.0
+
+[submodule "cayoacosta/dassacadena15"]
+	path = cayoacosta/dassacadena15
+	url = git@github.com:cayoacosta/dassacadena15.git
+	branch = main
