@@ -22,3 +22,8 @@
 	path = kypnetgt/ISP
 	url = git@github.com:kypnetgt/ISP.git
 	branch = ISP
+
+[submodule "juliangarciait/odoosaborati"]
+	path = juliangarciait/odoosaborati
+	url = git@github.com:juliangarciait/odoosaborati.git
+	branch = main
