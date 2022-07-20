@@ -27,3 +27,8 @@
 	path = juliangarciait/odoosaborati
 	url = git@github.com:juliangarciait/odoosaborati.git
 	branch = main
+
+[submodule "RLJO/stof"]
+	path = RLJO/stof
+	url = git@github.com:RLJO/stof.git
+	branch = main
