@@ -27,3 +27,8 @@
 	path = cayoacosta/dassacadena15
 	url = git@github.com:cayoacosta/dassacadena15.git
 	branch = main
+
+[submodule "meeras-emipro/shopify-multicurrency-duties-line"]
+	path = meeras-emipro/shopify-multicurrency-duties-line
+	url = git@github.com:meeras-emipro/shopify-multicurrency-duties-line.git
+	branch = production
